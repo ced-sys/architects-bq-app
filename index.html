@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArchiBQ Pro- BQ Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>ArchiBQ Pro</h1>
+            <p>Intelligent Bill of Qunatities Generator</p>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+
+            <div class="progress-section">
+                <h2>Processing Pipline</h2>
+                <div class="steps">
+                    <div class="step-circle"></div>
+                    <span>Upload</span>
+                </div>
+                <div class="step" data-step1="1">
+                    <div class="step-circle"></div>
+                    <span>Interpret</span>
+                </div>
+                <div class="step" data-step="3">
+                    <div class="step-circle"></div>
+                    <span>Symbols</span>
+                </div>
+                <div class="step" data-step="4">
+                    <div class="step-circle"></div>
+                    <span>Elements</span>
+                </div>
+                <div clas="step" data-step="5">
+                    <div class="step-circle"></div>
+                    <span>Pricing</span>
+                </div>
+                <div class="step" data-step="6">
+                    <div class="step-circle"></div>
+                    <span>Output</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="upload-area" id="uploadArea">
+            <div class="upload box">
+                <div class="upload-icon"></div>
+                <h3>Upload Your Drawing</h3>
+                <p>Support for PDF and DWG files</p>
+                <input type="file" id="fileInput" accept=".pdf,.dwg" hidden>
+                <button id="uploadBtn">Choose File</button>
+            </div>
+        </div>
+
+        
+    </main>
+</body>
