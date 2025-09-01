@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,6 +56,58 @@
             </div>
         </div>
 
-        
+        <div class="processing-area hidden" id="processingArea">
+            <div class="spinner"></div>
+            <h3>Processing Your Drawing...</h3>
+            <p id="processingStatus">Initializing...</p>
+        </div>
+
+        <div class="results-area hidden" id="resultsArea">
+            <div class="project-summary">
+                <h3 id="projectName">Project Name</h3>
+                <div class="summary-cards">
+                    <div class="card">
+                        <div class="card-value" id="totalCost">Sh0</div>
+                        <div class="card-label">Total Cost</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-value" id="itemCount">0</div>
+                        <div class="card-label">BQ Items</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-value">98.5%</div>
+                        <div class="card-label">Accuracy</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bq-table">
+                <h3>Bill of Quantities</h3>
+                <table id="bqTable">
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Category</th>
+                            <th>Description</th>
+                            <th>Quantity</th>
+                            <th>Rate (Sh)</th>
+                            <th>Amount (Sh)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bqTableBody">
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="export-buttons">
+                <button class="export-btn pdf">Export PDF</button>
+                <button class="export-btn excel">Export Excel</button>
+                <button class="export-btn reset" id="resetBtn">New Project</button>
+            </div>
+        </div>
     </main>
+
+    <script src="script.js"></script>
 </body>
+</html>
